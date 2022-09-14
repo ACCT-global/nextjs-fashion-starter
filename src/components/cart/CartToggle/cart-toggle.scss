@@ -1,0 +1,35 @@
+@import "src/styles/scaffold";
+
+[data-fs-button-cart] {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: rem(6px);
+    left: rem(22px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: var(--fs-spacing-4);
+    height: var(--fs-spacing-3);
+    padding: var(--fs-spacing-1);
+    font-size: var(--fs-text-size-0);
+    line-height: var(--fs-text-size-0);
+    color: var(--fs-color-text);
+    content: attr(data-items);
+    background: var(--fs-color-accent-3);
+    border-radius: var(--fs-border-radius-pill);
+    transition:
+      var(--fs-transition-property) var(--fs-transition-timing)
+      var(--fs-transition-function);
+  }
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-visible {
+    &::after {
+      box-shadow: 0 0 0 2px var(--fs-color-tertiary-bkg-hover);
+    }
+  }
+}
