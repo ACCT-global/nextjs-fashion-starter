@@ -1,7 +1,7 @@
 import { isFastStoreError } from '@faststore/api'
 import type { NextApiHandler, NextApiRequest } from 'next'
 
-import { execute } from '../src/server'
+import { execute } from '../../server'
 
 const parseRequest = (request: NextApiRequest) => {
   const { operationName, variables, query } =
