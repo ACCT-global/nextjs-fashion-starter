@@ -60,9 +60,8 @@ function CarouselBannerHome({ items }: TProps) {
                   <Image
                     src={imageMobile.url}
                     alt={banner.title}
-                    width={360}
-                    height={400}
-                    sizes="(max-width: 768px) 70vw, 50vw"
+                    width={720}
+                    height={800}
                   />
                 </div>
               )}
@@ -71,9 +70,9 @@ function CarouselBannerHome({ items }: TProps) {
                   <Image
                     src={imageDesktop.url}
                     alt={banner.title}
-                    width={360}
-                    height={240}
-                    sizes="(max-width: 768px) 70vw, 50vw"
+                    width={1920}
+                    height={884}
+                    layout="responsive"
                   />
                 </div>
               )}

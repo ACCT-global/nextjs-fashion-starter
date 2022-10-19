@@ -30,7 +30,7 @@
   z-index: 0;
   display: none;
 
-  @include media(">=notebook") {
+  @include media(">=phonelg") {
     display: block;
   }
 }
@@ -39,11 +39,11 @@
   z-index: 0;
   display: block;
 
-  .gatsby-image-wrapper img {
-    height: 450px;
-  }
+  // .gatsby-image-wrapper img {
+  //   height: 450px;
+  // }
 
-  @include media(">=notebook") {
+  @include media(">=phonelg") {
     display: none;
   }
 }
